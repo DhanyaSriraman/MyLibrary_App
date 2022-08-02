@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <ImageView
+        android:id="@+id/imgBook1"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/imgBook1"
+     android:layout_marginLeft="50dp"
+     android:id="@+id/alreadyRead"
+     android:text="Already read"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgBook1"
+        android:layout_below="@+id/alreadyRead"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/currentlyRead"
+        android:text="currently reading"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/imgBook1"
+       android:layout_below="@+id/currentlyRead"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="50dp"
+       android:id="@+id/favRead"
+       android:text="My favourite"/>
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/imgBook1"
+        android:text="Author"
+        app:layout_constraintBottom_toTopOf="@+id/NameBook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBook1" />
+
+    <TextView
+        android:id="@+id/NameBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/bookAuthor"
+        android:text="Book name"
+        app:layout_constraintBottom_toTopOf="@+id/Pages"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookAuthor" />
+
+    <TextView
+        android:id="@+id/Pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NameBook"
+        android:text="Pages"
+        tools:layout_editor_absoluteX="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <TextView
+        android:id="@+id/LongDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pages"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Long Description"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="494dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/LongDesc"
+        android:id="@+id/longD"/>
+
+
+    <TextView
+        android:id="@+id/auth"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imgBook1"
+        android:layout_height="wrap_content"
+        android:text="Author Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/bookAuthor"
+       />
+
+    <TextView
+        android:id="@+id/Name1"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/auth"
+        android:layout_height="wrap_content"
+        android:text="Book Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/bookAuthor"
+        />
+    <TextView
+        android:id="@+id/pages"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/Name1"
+        android:layout_height="wrap_content"
+        android:text="Author Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/bookAuthor"
+        />
+</RelativeLayout>
